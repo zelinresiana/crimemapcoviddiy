@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+    <title>Space Time Cube</title>
+	
+	<style>
+		.container-fluid{position:absolute;height:100%}object{width:100%;height:100%}
+		body{font-family: 'Poppins', sans-serif;}
+	</style>
+	
+  </head>
+  <body>
+    <!-- <div id="content" class="mt-2"></div> -->	
+	
+	<div class="title" style="color: #000;
+	#position: fixed;
+	position: relative;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	max-width: 360px;
+	#margin-top: 20px;
+	font-weight:bold;
+	text-align:center;">
+		<span class="text-center">PETA KRIMINALITAS TAHUN 2020 </span><br>
+		<span class="text-center">Space Time Cube (STC) Visualization</span>
+	</div>
+	
+    <div id="content" class="container-fluid mx-0 px-0">
+      <!-- Content here -->
+    </div>
+	
+	<div onclick="home()" class="home" style="
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    bottom: 285px;
+    right: 45px;
+    color: #000;
+    font-weight: bold;
+    max-width: 55px;
+    max-height: 60px;
+    padding: 15px 7px;
+    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+">
+		<span>Home</span>
+	</div>
+	
+	<div onclick="bulan()" class="bulan" style="
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    bottom: 225px;
+    right: 45px;
+    color: #000;
+    font-weight: bold;
+    max-width: 50px;
+    max-height: 60px;
+    padding: 15px 10px;
+    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+">
+		<span>Bulan</span>
+	</div>
+	
+	<div onclick="tanggal()" class="tanggal" style="
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    bottom: 175px;
+    right: 45px;
+    color: #000;
+    font-weight: bold;
+    max-width: 70px;
+    max-height: 60px;
+    padding: 12px 10px;
+    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+">
+		<span>Tanggal</span>
+	</div>
+	
+	<div onclick="jam()" class="jam" style="
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    bottom: 125px;
+    right: 45px;
+    color: #000;
+    font-weight: bold;
+    max-width: 50px;
+    max-height: 60px;
+    padding: 12px 10px;
+    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+">
+		<span>Jam</span>
+	</div>
+	
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+	
+		$(document).ready(function(){
+			tanggal();
+		});
+
+		function jam() {
+			document.getElementById("content").innerHTML='<object type="text/html" data="kriminalitas_jam.html" ></object>';
+		}
+
+		function tanggal() {
+			document.getElementById("content").innerHTML='<object type="text/html" data="kriminalitas_tanggal.html" ></object>';
+		}
+
+		function bulan() {
+			document.getElementById("content").innerHTML='<object type="text/html" data="kriminalitas_bulan.html" ></object>';
+		}
+
+    </script>
+  </body>
+</html>
